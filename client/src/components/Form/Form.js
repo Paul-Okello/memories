@@ -1,3 +1,4 @@
+
 import { Button, Paper, TextField, Typography } from "@material-ui/core";
 import React, { useState } from "react";
 import FileBase from "react-file-base64";
@@ -116,6 +117,7 @@ const Form = () => {
       </form>
     </Paper>
   );
+
 };
 
 export default Form;

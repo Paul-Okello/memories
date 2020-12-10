@@ -1,3 +1,4 @@
+
 import {
   Button,
   Card,
@@ -55,6 +56,7 @@ const Post = ({ post }) => {
       </CardActions>
     </Card>
   );
+
 };
 
 export default Post;

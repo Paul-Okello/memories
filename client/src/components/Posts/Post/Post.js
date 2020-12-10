@@ -16,6 +16,7 @@ import moment from "moment";
 
 const Post = ({ post }) => {
   const classes = useStyles();
+
   return (
     <Card className={classes.card}>
       <CardMedia

@@ -6,7 +6,7 @@ import cors from "cors";
 import postRoutes from "./routes/posts.js";
 
 const app = express();
-
+app.use(cors());
 //general 🕵
 app.use("/posts", postRoutes);
 
@@ -23,8 +23,6 @@ app.use(
     extended: true,
   })
 );
-
-app.use(cors());
 
 //DataBase Setup
 const CONNECTION_URL =

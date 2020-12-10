@@ -8,7 +8,6 @@ import postRoutes from "./routes/posts.js";
 const app = express();
 app.use(cors());
 //general 🕵
-app.use("/posts", postRoutes);
 
 app.use(
   bodyParser.json({
@@ -23,7 +22,7 @@ app.use(
     extended: true,
   })
 );
-
+app.use("/posts", postRoutes);
 //DataBase Setup
 const CONNECTION_URL =
   "mongodb+srv://admin:FMcDNH03td1b0Fmy@cluster0.gzz0g.mongodb.net/memories?retryWrites=true&w=majority";

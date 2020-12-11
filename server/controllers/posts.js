@@ -48,6 +48,8 @@ export const deletePost = async (req, res) => {
     return res.status(404).send(`No post with id: ${id}`);
 
   await PostMessage.findByIdAndRemove(id);
+
+  console.log("DELETED THE POST");
   res.json({ message: "Post deleted Successfully" });
 };
 

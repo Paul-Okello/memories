@@ -17,7 +17,9 @@ app.use(
     extended: true,
   })
 );
-
+app.get("/", (req, res) => {
+  res.send("Hello to Memories API");
+});
 app.use(
   bodyParser.urlencoded({
     limit: "30mb",

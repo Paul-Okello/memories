@@ -18,7 +18,7 @@ app.use(
   })
 );
 app.get("/", (req, res) => {
-  res.send("Hello to Memories API");
+  res.send("Hello to Memories API by Paul Okello");
 });
 app.use(
   bodyParser.urlencoded({

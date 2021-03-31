@@ -22,11 +22,17 @@ export default makeStyles((theme) => ({
     display: "flex",
     justifyContent: "flex-end",
     width: "400px",
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "row",
+    },
   },
   profile: {
     display: "flex",
     justifyContent: "space-between",
     width: "400px",
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "column",
+    },
   },
   userName: {
     display: "flex",
@@ -35,6 +41,9 @@ export default makeStyles((theme) => ({
   brandContainer: {
     display: "flex",
     alignItems: "center",
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "column",
+    },
   },
   purple: {
     color: theme.palette.getContrastText(deepPurple[500]),
